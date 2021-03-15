@@ -1,5 +1,5 @@
 <h1 align="center">
-  { Your Finance }
+  { Your Wallet}
 </h1>
 
 <p align="center">
@@ -12,15 +12,15 @@
 <br>
 
 <p align="center">
-  <img alt="" src="" width="100%">
+  <img alt="wallet" src="description.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido utilizando:
-- 
-- 
-- 
+- ReactJS
+- TypeScript
+- StyledComponents
 
 ## 💻 Projeto
 
