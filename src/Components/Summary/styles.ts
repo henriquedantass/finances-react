@@ -28,7 +28,7 @@ export const Container = styled.div`
         }
 
         &.total-background {
-            background: var(--light-purple);
+            background: var(--green);
             color: #fff;
         }
 

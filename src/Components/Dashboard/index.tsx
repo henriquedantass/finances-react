@@ -12,6 +12,4 @@ export function Dashboard() {
         </Container>
     )
 
-
-
 }
