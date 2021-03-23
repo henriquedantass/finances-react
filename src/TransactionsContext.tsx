@@ -23,7 +23,7 @@ interface TransactionsProviderProps {
 
 interface TransactionsContextData {
     transactions: Transaction[];
-    createTransaction: (transaction: TransactionInput) => void;
+    createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
 
 export const TransactionsContext = createContext<TransactionsContextData>(
@@ -41,9 +41,19 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     }, []);
 
 
-    function createTransaction(transaction: TransactionInput) {
+    async function createTransaction(transactionInput: TransactionInput) {
 
-        api.post('/transactions', transaction)
+        const response = await api.post('/transactions', {
+            ...transactionInput,
+            createdAt: new Date()
+        });
+
+        const { transaction } = response.data;
+        setTransactions([                // conceito de imutabilidade, não posso alterar o estado do componente de
+            // mas sim adicionar um novo valor dentro dele. nesse caso eu carreguei todos os dados do arrays 
+            // e inseri um novo objeto dentro dele.
+            ...transactions, transaction
+        ]);
     }
 
     return (
