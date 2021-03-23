@@ -1,3 +1,14 @@
+## Iniciando LocalHost
+Primeiro, inicie o servidor com os seguintes comandos em seu terminal:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+
 <h1 align="center">
   { Your Wallet}
 </h1>
@@ -21,13 +32,13 @@ Esse projeto foi desenvolvido utilizando:
 - ReactJS
 - TypeScript
 - StyledComponents
+- MirageJS
 
 ## 💻 Projeto
 
 O Your Finances é uma aplicação feita em react com o objetivo de proporcionar um controle financeiro. Foi desenvolvida durante o módulo 2 do bootcamp Ignite da Rocketseat em 2021. 
 
-## 🔖 Layout Inicial (ROCKETSEAT)
+## 🧠 Aprendizado
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy)). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
+Com esse projeto foi possível aprender sobre styledComponents, criação de contextos no react, criação de hooks, como consumir e como criar uma fake api utilizando MirageJS.
 
