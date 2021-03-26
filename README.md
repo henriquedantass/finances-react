@@ -1,3 +1,11 @@
+## Instalando Dependências
+
+```bash
+npm install
+# or
+yarn 
+```
+
 ## Iniciando LocalHost
 Primeiro, inicie o servidor com os seguintes comandos em seu terminal:
 
